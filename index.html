@@ -176,11 +176,11 @@
 
 <!-- Actividad 4 -->
 <div id="activity-4" class="activity">
-    <div class="banner" onclick="toggleContent('formacion_parejas')">
+    <div class="banner" onclick="toggleContent('formacion-parejas')">
         <div class="title">🤝 Actividad 4: Formación de Parejas ⏰ Tiempo: 3 minutos</div>
         <div class="subtitle">Explicar la importancia del trabajo en equipo en parejas y asegurar la organización.</div>
     </div>
-    <div id="formacion_parejas" class="content">
+    <div id="formacion-parejas" class="content">
         <table>
             <tr>
                 <td><strong>PASO 1 (2 minutos):</strong> Reproduce la DIAPOSITIVA 7 “Formación de Equipos”, explica la importancia de trabajar en equipo y junta a los niños en pares. Si el número es impar, integra un trío para asegurar que todos tengan compañeros.</td>
@@ -263,33 +263,30 @@
 
                <!-- ............................................Aquí terminarán las actividades........................................... -->
 
-    </div>
-
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            if (content.style.display === "block") {
-                content.style.display = "none";
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
             } else {
-                content.style.display = "block";
-            }
+            content.style.display = "block";
         }
+    }
 
-        function updateContent() {
-            var time = document.getElementById("class-time").value;
-            var level = document.getElementById("class-level").value;
-            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
-            document.getElementById("selected-level").innerText = "Nivel: " + level;
+    function updateContent() {
+        var time = document.getElementById("class-time").value;
+        var level = document.getElementById("class-level").value;
+        document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+        document.getElementById("selected-level").innerText = "Nivel: " + level;
 
-            var steps = {
-              // PASTE YOUR EXISTING 'steps' OBJECT HERE
+        var steps = {
     "K1": {
         "5.1": [
             {
                 "step": 1,
                 "time": { "30": 1, "40": 1, "50": 1 },
                 "accion": "Reproduce la DIAPOSITIVA 8 y explica cómo crear el código para resolver el reto",
-                "dialogo": "¡CODE SQUAD! Para que Marina pueda guiar al barco "El Valiente" a través de la niebla, vamos a crear un código para ayudar a Don Faro a iluminar las boyas en el orden correcto. Usaremos fichas rectas y de esquina para representar las boyas de colores. Cada boya tendrá una ficha que la representará. ¡Manos a la obra!"
+                "dialogo": "¡CODE SQUAD! Para que Marina pueda guiar al barco El Valiente a través de la niebla, vamos a crear un código para ayudar a Don Faro a iluminar las boyas en el orden correcto. Usaremos fichas rectas y de esquina para representar las boyas de colores. Cada boya tendrá una ficha que la representará. ¡Manos a la obra!"
             },
             {
                 "step": 2,
@@ -300,7 +297,7 @@
                 "step": 3,
                 "time": { "30": 5, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 10 y supervisa la creación del código en pares. Ayuda a los equipos mientras dibujan y asignan fichas de ruta.",
-                "dialogo": "¡Genios! Recuerden, cada boya debe tener su ficha correcta. Primero dibujen la boya, escriban "=" y luego dibujen la ficha. Por ejemplo, la boya roja se representa con una ficha recta. ¡Vamos a crear un camino seguro para que "El Valiente" llegue al puerto!"
+                "dialogo": "¡Genios! Recuerden, cada boya debe tener su ficha correcta. Primero dibujen la boya, escriban = y luego dibujen la ficha. Por ejemplo, la boya roja se representa con una ficha recta. ¡Vamos a crear un camino seguro para que El Valiente llegue al puerto!"
             }
         ],
         "6": [
@@ -308,13 +305,13 @@
                 "step": 1,
                 "time": { "30": 2, "40": 2, "50": 2 },
                 "accion": "Reproduce la DIAPOSITIVA 17 y dirige a los Genios para que intercambien los códigos que hicieron.",
-                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a "El Valiente". Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
+                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a El Valiente. Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
             },
             {
                 "step": 2,
                 "time": { "30": 7, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 18 y distribuye los códigos asignados para que cada equipo comience a construir.",
-                "dialogo": "¡CODE SQUAD! ¡Manos a la obra! Con el código que recibieron, organicen las fichas para que las boyas estén en el orden correcto: roja, azul, amarilla. Cada ficha representa el camino entre las boyas. ¡Vamos a guiar a "El Valiente" al puerto!"
+                "dialogo": "¡CODE SQUAD! ¡Manos a la obra! Con el código que recibieron, organicen las fichas para que las boyas estén en el orden correcto: roja, azul, amarilla. Cada ficha representa el camino entre las boyas. ¡Vamos a guiar a El Valiente al puerto!"
             }
         ],
         "7": [
@@ -322,13 +319,13 @@
                 "step": 1,
                 "time": { "30": 3, "40": 4, "50": 5 },
                 "accion": "Reproduce la DIAPOSITIVA 21 y explica el obstáculo a los Genios.",
-                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando "El Valiente" estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
+                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando El Valiente estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
             },
             {
                 "step": 2,
                 "time": { "30": 7, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 22 “Código de Rescate K1” y motiva a los Genios que sigan el nuevo código proyectado en la pantalla.",
-                "dialogo": "¡Genios del CODE SQUAD! Este es el "Código de Rescate de Boyas". Usen las fichas rectas y de esquina para conectar las boyas roja, azul y amarilla y guiar a "El Valiente" al puerto. ¡Trabajen juntos para resolverlo con mucha atención!"
+                "dialogo": "¡Genios del CODE SQUAD! Este es el Código de Rescate de Boyas. Usen las fichas rectas y de esquina para conectar las boyas roja, azul y amarilla y guiar a El Valiente al puerto. ¡Trabajen juntos para resolverlo con mucha atención!"
             }
         ]
     },
@@ -338,7 +335,7 @@
                 "step": 1,
                 "time": { "30": 1, "40": 1, "50": 1 },
                 "accion": "Reproduce la DIAPOSITIVA 11 y explica cómo crear el código para resolver el reto.",
-                "dialogo": "¡CODE SQUAD! Marina necesita nuestra ayuda para guiar "El Valiente". Vamos a usar fichas rectas, esquinas y curvas simples para representar las boyas. Completemos el patrón para que Don Faro pueda iluminar el camino correctamente. ¡Ustedes pueden hacerlo!"
+                "dialogo": "¡CODE SQUAD! Marina necesita nuestra ayuda para guiar El Valiente. Vamos a usar fichas rectas, esquinas y curvas simples para representar las boyas. Completemos el patrón para que Don Faro pueda iluminar el camino correctamente. ¡Ustedes pueden hacerlo!"
             },
             {
                 "step": 2,
@@ -350,7 +347,7 @@
                 "step": 3,
                 "time": { "30": 5, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 13 y supervisa la creación del código en pares. Ayuda a los equipos mientras dibujan y asignan fichas de ruta.",
-                "dialogo": "¡Qué bien lo están haciendo! Recuerden, cada boya debe tener su ficha. Dibujen la boya, escriban "=" y coloquen la ficha correcta. Luego, junten las dos partes para que Dart pueda recorrer el camino completo. ¡Están ayudando a Marina a guiar al barco "El Valiente"!"
+                "dialogo": "¡Qué bien lo están haciendo! Recuerden, cada boya debe tener su ficha. Dibujen la boya, escriban = y coloquen la ficha correcta. Luego, junten las dos partes para que Dart pueda recorrer el camino completo. ¡Están ayudando a Marina a guiar al barco El Valiente!"
             }
         ],
         "6": [
@@ -358,13 +355,13 @@
                 "step": 1,
                 "time": { "30": 2, "40": 2, "50": 2 },
                 "accion": "Reproduce la DIAPOSITIVA 17 y dirige a los Genios para que intercambien los códigos que hicieron.",
-                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a "El Valiente". Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
+                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a El Valiente. Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
             },
             {
                 "step": 2,
                 "time": { "30": 7, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 19 y distribuye los códigos asignados para que cada equipo comience a construir.",
-                "dialogo": "¡CODE SQUAD! Tenemos un nuevo desafío. Usen el código para construir la ruta completa: roja, azul, amarilla, verde. Pongan mucha atención para que Dart pueda guiar a "El Valiente" sin perderse. ¡Ustedes pueden lograrlo!"
+                "dialogo": "¡CODE SQUAD! Tenemos un nuevo desafío. Usen el código para construir la ruta completa: roja, azul, amarilla, verde. Pongan mucha atención para que Dart pueda guiar a El Valiente sin perderse. ¡Ustedes pueden lograrlo!"
             }
         ],
         "7": [
@@ -372,13 +369,13 @@
                 "step": 1,
                 "time": { "30": 3, "40": 4, "50": 5 },
                 "accion": "Reproduce la DIAPOSITIVA 21 y explica el obstáculo a los Genios.",
-                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando "El Valiente" estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
+                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando El Valiente estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
             },
             {
                 "step": 2,
                 "time": { "30": 7, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 23 “Código de Rescate K2” y motiva a los Genios que sigan el nuevo código proyectado en la pantalla.",
-                "dialogo": "¡Excelente, CODE SQUAD! Ahora, con este nuevo código mágico, vamos a reconstruir un camino más completo. Las curvas simples son para el colibrí, las rectas para el pez, y las esquinas para la tortuga. Recuerden trabajar en equipo y seguir el código con cuidado. ¡A construir el camino mágico para que las carrozas puedan seguir su desfile!"
+                "dialogo": "¡CODE SQUAD! Ahora tenemos el Código de Rescate de Boyas más avanzado. Usen las fichas curvas y de esquina para conectar las boyas roja, azul, amarilla y verde. ¡Asegúrense de hacerlo en el orden correcto para que Dart pueda guiar al barco con éxito!"
             }
         ]
 },
@@ -388,7 +385,7 @@
                 "step": 1,
                 "time": { "30": 1, "40": 1, "50": 1 },
                 "accion": "Reproduce la DIAPOSITIVA 14 y explica cómo crear el código para resolver el reto.",
-                "dialogo": "¡CODE SQUAD! Este es un reto avanzado. Vamos a usar fichas rectas, esquinas, curvas dobles y una ficha de retorno para guiar "El Valiente". Completen el patrón adaptado a las nuevas condiciones de la ruta. ¡Vamos a trabajar juntos!"
+                "dialogo": "¡CODE SQUAD! Este es un reto avanzado. Vamos a usar fichas rectas, esquinas, curvas dobles y una ficha de retorno para guiar El Valiente. Completen el patrón adaptado a las nuevas condiciones de la ruta. ¡Vamos a trabajar juntos!"
             },
             {
                 "step": 2,
@@ -408,7 +405,7 @@
                 "step": 1,
                 "time": { "30": 2, "40": 2, "50": 2 },
                 "accion": "Reproduce la DIAPOSITIVA 17 y dirige a los Genios para que intercambien los códigos que hicieron.",
-                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a "El Valiente". Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
+                "dialogo": "¡Genios del CODE SQUAD! Ahora, vamos a usar los códigos que ustedes crearon para ayudar a Marina y a El Valiente. Voy a recoger cada código, asignarles un nombre y entregárselos a otro equipo. ¡Es hora de compartir nuestras ideas y construir algo juntos!"
             },
             {
                 "step": 2,
@@ -422,77 +419,74 @@
                 "step": 1,
                 "time": { "30": 3, "40": 4, "50": 5 },
                 "accion": "Reproduce la DIAPOSITIVA 21 y explica el obstáculo a los Genios.",
-                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando "El Valiente" estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
+                "dialogo": "¡CODE SQUAD! ¡Emergencia en Bahía Calma! Justo cuando El Valiente estaba a punto de seguir el camino de boyas hacia el puerto, un fuerte viento desordenó las boyas. Ahora están fuera de lugar, y el barco no puede encontrar su ruta segura. Pero no se preocupen, el cuartel general nos ha enviado un nuevo código para reorganizar el camino. ¡Trabajemos juntos para resolverlo!"
             },
             {
                 "step": 2,
                 "time": { "30": 7, "40": 10, "50": 10 },
                 "accion": "Reproduce la DIAPOSITIVA 24 y motiva a los Genios a construir el nuevo código con bloques siguiendo el patrón proyectado.",
-                "dialogo": "¡CODE SQUAD! Este es el desafío final del "Código de Rescate de Boyas". Usen fichas rectas, curvas dobles, esquinas y de retorno para conectar las boyas roja, azul, amarilla, verde y naranja. ¡Es un reto, pero sé que pueden hacerlo juntos!"
+                "dialogo": "¡CODE SQUAD! Este es el desafío final del Código de Rescate de Boyas. Usen fichas rectas, curvas dobles, esquinas y de retorno para conectar las boyas roja, azul, amarilla, verde y naranja. ¡Es un reto, pero sé que pueden hacerlo juntos!"
             }
         ]
     }
-           };
-
-           // Mostrar u ocultar actividades según el nivel seleccionado
-            var activities = {
-                "activity-0": true,
-                "activity-1": true,
-                "activity-2": true,
-                "activity-3": true,
-                "activity-4": true,
-                "activity-5": true,
-                "activity-6": true,
-                "activity-7": true,
-                "activity-8": true
-            };
-
-             Object.keys(activities).forEach(function(activityId) {
-                var activityElement = document.getElementById(activityId);
-                if (activities[activityId]) {
-                    activityElement.style.display = "block";
-                } else {
-                    activityElement.style.display = "none";
-                }
-            });
+};
 
 
-            // Renderizar los pasos dinámicamente en las tablas de actividades 5, 6 y 7
-            renderActivitySteps("activity-5-content", steps[level]["5." + (level === "K1" ? 1 : level === "K2" ? 2 : 3)], time);
-            renderActivitySteps("activity-6-content", steps[level]["6"], time);
-            renderActivitySteps("activity-7-content", steps[level]["7"], time);
 
-            document.getElementById("activity-5-total-time").innerText = calculateTotalTime(steps[level]["5." + (level === "K1" ? 1 : level === "K2" ? 2 : 3)], time) + " minutos";
-            document.getElementById("activity-6-total-time").innerText = calculateTotalTime(steps[level]["6"], time) + " minutos";
-            document.getElementById("activity-7-total-time").innerText = calculateTotalTime(steps[level]["7"], time) + " minutos";
-        }
+ // Mostrar u ocultar actividades según el nivel seleccionado
+        var activities = {
+            "activity-0": true,
+            "activity-1": true,
+            "activity-2": true,
+            "activity-3": true,
+            "activity-4": true,
+            "activity-5": true,
+            "activity-6": true,
+            "activity-7": steps[level]["7"].some(s => s.time[time] > 0),
+            "activity-8": true
+        };
 
-        function renderActivitySteps(contentId, steps, time) {
-            var contentContainer = document.getElementById(contentId);
-            contentContainer.innerHTML = "";
-            steps.forEach(function(step) {
-                if (step.time[time] > 0) {
-                    var row = document.createElement("tr");
-                    var stepCell = document.createElement("td");
-                    var dialogCell = document.createElement("td");
-
-                    stepCell.innerHTML = "<strong>PASO " + step.step + " (" + step.time[time] + " minutos):</strong> " + step.accion;
-                    dialogCell.innerHTML = "<strong>DIÁLOGO SUGERIDO:</strong> " + step.dialogo;
-
-                    row.appendChild(stepCell);
-                    row.appendChild(dialogCell);
-                    contentContainer.appendChild(row);
-                }
-            });
-        }
-
-        function calculateTotalTime(steps, time) {
-            return steps.reduce((total, step) => total + step.time[time], 0);
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            updateContent();
+        Object.keys(activities).forEach(function(activityId) {
+            var activityElement = document.getElementById(activityId);
+            if (activities[activityId]) {
+                activityElement.style.display = "block";
+            } else {
+                activityElement.style.display = "none";
+            }
         });
-    </script>
-    </body>
-</html>
+
+        // Renderizar los pasos dinámicamente en las tablas de actividades 5, 6 y 7
+        renderActivitySteps("activity-5-content", steps[level]["5." + (level === "K1" ? 1 : level === "K2" ? 2 : 3)], time);
+        renderActivitySteps("activity-6-content", steps[level]["6"], time);
+        renderActivitySteps("activity-7-content", steps[level]["7"], time);
+
+        document.getElementById("activity-5-total-time").innerText = calculateTotalTime(steps[level]["5." + (level === "K1" ? 1 : level === "K2" ? 2 : 3)], time) + " minutos";
+        document.getElementById("activity-6-total-time").innerText = calculateTotalTime(steps[level]["6"], time) + " minutos";
+        document.getElementById("activity-7-total-time").innerText = calculateTotalTime(steps[level]["7"], time) + " minutos";
+    }
+
+    function renderActivitySteps(contentId, steps, time) {
+        var contentContainer = document.getElementById(contentId);
+        contentContainer.innerHTML = "";
+        steps.forEach(function(step) {
+            if (step.time[time] > 0) {
+                var row = document.createElement("tr");
+                var stepCell = document.createElement("td");
+                var dialogCell = document.createElement("td");
+
+                stepCell.innerHTML = "<strong>PASO " + step.step + " (" + step.time[time] + " minutos):</strong> " + step.accion;
+                dialogCell.innerHTML = "<strong>DIÁLOGO SUGERIDO:</strong> " + step.dialogo;
+
+                row.appendChild(stepCell);
+                row.appendChild(dialogCell);
+                contentContainer.appendChild(row);
+            }
+        });
+    }
+
+    function calculateTotalTime(steps, time) {
+        return steps.reduce((total, step) => total + step.time[time], 0);
+    }
+
+    updateContent();
+</script>
